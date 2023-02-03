@@ -1,0 +1,32 @@
+@import '../../styles/global.scss';
+
+.d-navbar {
+    @include flex(space-between, center, 0);
+    padding: 0 20px;
+
+    .logo-text {
+        color: white;
+        font-family: 'Poppins';
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+            color: lightblue;
+        }
+    }
+
+    ul {
+        @include flex(none, center, 20px);
+
+        li {
+            list-style-type: none;
+            text-transform: upperase;
+            cursor: pointer;
+            color: white;
+
+            &:hover {
+                color: lightblue;
+            }
+        }
+    }
+}
